@@ -26,9 +26,9 @@ org 100h
         cmp DI, 21d
         je saltarFilas
     ReturnIterar:
-        INC SI
-        INC DL
-        INC DI
+        ADD SI, 1d
+        ADD DL, 1d
+        ADD DI, 1d
         CMP DI, 30d
         JB ITERAR
         jmp esperartecla
