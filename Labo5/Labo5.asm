@@ -56,8 +56,7 @@ org 100h
         INT 16h
 
     saltarFilas: 
-        inc DH
-        inc DH
+        ADD DH, 2d
         MOV DL, 19d
         jmp ReturnIterar
 
